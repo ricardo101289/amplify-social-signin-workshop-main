@@ -30,7 +30,7 @@ const signOutURI = awsExports.oauth.redirectSignOut.split(',')
 if (isLocalhost) {
   awsExports.oauth.redirectSignIn = signInURI[0]
   awsExports.oauth.redirectSignOut = signOutURI[0]
-} else if (window.location.hostname === 'https://main.d3qaayycjr6jup.amplifyapp.com/') {
+} else if (window.location.hostname === 'main.d3qaayycjr6jup.amplifyapp.com') {
   awsExports.oauth.redirectSignIn = signInURI[1]
   awsExports.oauth.redirectSignOut = signOutURI[1]
 } else {
