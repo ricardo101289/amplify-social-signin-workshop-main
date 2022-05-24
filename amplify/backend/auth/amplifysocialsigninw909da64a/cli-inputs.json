@@ -1,0 +1,52 @@
+{
+  "version": "1",
+  "cognitoConfig": {
+    "identityPoolName": "amplifysocialsigninw909da64a_identitypool_909da64a",
+    "allowUnauthenticatedIdentities": false,
+    "resourceNameTruncated": "amplif909da64a",
+    "userPoolName": "amplifysocialsigninw909da64a_userpool_909da64a",
+    "autoVerifiedAttributes": [
+      "email"
+    ],
+    "mfaConfiguration": "OFF",
+    "mfaTypes": [
+      "SMS Text Message"
+    ],
+    "smsAuthenticationMessage": "Your authentication code is {####}",
+    "smsVerificationMessage": "Your verification code is {####}",
+    "emailVerificationSubject": "Your verification code",
+    "emailVerificationMessage": "Your verification code is {####}",
+    "defaultPasswordPolicy": false,
+    "passwordPolicyMinLength": 8,
+    "passwordPolicyCharacters": [],
+    "requiredAttributes": [
+      "email"
+    ],
+    "aliasAttributes": [],
+    "userpoolClientGenerateSecret": false,
+    "userpoolClientRefreshTokenValidity": 30,
+    "userpoolClientWriteAttributes": [
+      "email"
+    ],
+    "userpoolClientReadAttributes": [
+      "email"
+    ],
+    "userpoolClientLambdaRole": "amplif909da64a_userpoolclient_lambda_role",
+    "userpoolClientSetAttributes": false,
+    "sharedId": "909da64a",
+    "resourceName": "amplifysocialsigninw909da64a",
+    "authSelections": "identityPoolAndUserPool",
+    "useDefault": "defaultSocial",
+    "hostedUI": true,
+    "hostedUIDomainName": "amplifysocialsigninw909da64a-909da64a",
+    "authProvidersUserPool": [
+      "Google"
+    ],
+    "hostedUIProviderMeta": "[{\"ProviderName\":\"Google\",\"authorize_scopes\":\"openid email profile\",\"AttributeMapping\":{\"email\":\"email\",\"username\":\"sub\"}}]",
+    "oAuthMetadata": "{\"AllowedOAuthFlows\":[\"code\"],\"AllowedOAuthScopes\":[\"phone\",\"email\",\"openid\",\"profile\",\"aws.cognito.signin.user.admin\"],\"CallbackURLs\":[\"http://localhost:3000/\",\"https://main.d3qaayycjr6jup.amplifyapp.com/\"],\"LogoutURLs\":[\"http://localhost:3000/\",\"https://main.d3qaayycjr6jup.amplifyapp.com/\"]}",
+    "userPoolGroupList": [],
+    "serviceName": "Cognito",
+    "usernameCaseSensitive": false,
+    "useEnabledMfas": true
+  }
+}
