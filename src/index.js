@@ -10,6 +10,7 @@ import awsExports from './aws-exports'
 import { UserContextProvider } from './contexts/UserContext'
 
 //Check if you are in localhost or production
+console.log("window.location.hostname: ", window.location.hostname);
 const isLocalhost = Boolean(
   window.location.hostname === 'localhost' ||
     // [::1] is the IPv6 localhost address.
@@ -33,7 +34,7 @@ if (isLocalhost) {
   awsExports.oauth.redirectSignIn = signInURI[1]
   awsExports.oauth.redirectSignOut = signOutURI[1]
 } else {
-  console.alert('This is not possible')
+  console.log('This is not possible')
 }
 //Check if you are in localhost or production
 //Then Configure Resources
